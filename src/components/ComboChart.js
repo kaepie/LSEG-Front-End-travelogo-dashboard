@@ -7,15 +7,15 @@ function ComboChart({ data, title, yAxis1Label, yAxis2Label, displayLegend = fal
       datasets: [
         {
           type: 'line',
-          label: '', // TODO: add label for first data
-          data: [], // TODO: pass first data here
+          label: 'checkin', // TODO: add label for first data
+          data: data.checkin, // TODO: pass first data here
           yAxisID: 'yAxis1',
           fill: true, // not fill the area under the line
         },
         {
           type: 'bar',
-          label: '', // TODO: add label for second data
-          data: [], // TODO: pass second data here
+          label: 'booking', // TODO: add label for second data
+          data: data.booking, // TODO: pass second data here
           yAxisID: 'yAxis2',
         },
       ],
